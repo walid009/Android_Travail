@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Curriculum Vitae V2</string>
+    <string name="FullName">FullName</string>
+    <string name="Email">Email</string>
+    <string name="Age">Age</string>
+    <string name="required">required</string>
+</resources>
