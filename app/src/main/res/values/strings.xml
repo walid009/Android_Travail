@@ -4,4 +4,7 @@
     <string name="Email">Email</string>
     <string name="Age">Age</string>
     <string name="required">required</string>
+    <string name="title_activity_toolbar_layout">toolbar_layout</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         radioButtonFemale = findViewById(R.id.radioButtonFemale)
 
         setupTextInputLayout()
-        title = "Create your Resume"
+        title = "Create your Resume "
     }
     private fun setupTextInputLayout() {
         binding.buttonNext.setOnClickListener {

@@ -22,7 +22,7 @@ class TroisiemeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_troisieme)
 
-        title = "Your Resume"
+        title = "Your Resume  "
 
         seekBarAndroid = findViewById(R.id.seekBarAndroid)
         seekBarIOS = findViewById(R.id.seekBarIOS)
