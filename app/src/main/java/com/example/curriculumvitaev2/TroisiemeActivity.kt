@@ -6,6 +6,14 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.CheckBox
 import android.widget.SeekBar
+import com.google.android.material.textfield.TextInputEditText
+import com.google.android.material.textfield.TextInputLayout
+import android.view.Menu
+import android.view.MenuItem
+import android.view.textservice.SpellCheckerInfo
+import android.widget.TextView
+import androidx.appcompat.widget.Toolbar
+import androidx.fragment.app.Fragment
 
 class TroisiemeActivity : AppCompatActivity() {
     private var buttonSubmit: Button? = null
@@ -18,13 +26,20 @@ class TroisiemeActivity : AppCompatActivity() {
     private var checkBoxMusic: CheckBox? = null
     private var checkBoxSport: CheckBox? = null
     private var checkBoxGames: CheckBox? = null
+
+    private lateinit var btnSkills: Button
+    private lateinit var btnHobbies: Button
+    private lateinit var btnLanguages: Button
+    private var textViewName: TextView? = null
+    private var textViewEmail: TextView? = null
+    private lateinit var btnMyCarrer: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_troisieme)
 
         title = "Your Resume  "
 
-        seekBarAndroid = findViewById(R.id.seekBarAndroid)
+        /*seekBarAndroid = findViewById(R.id.seekBarAndroid)
         seekBarIOS = findViewById(R.id.seekBarIOS)
 
         seekBarFlutter = findViewById(R.id.seekBarFlutter)
@@ -79,7 +94,47 @@ class TroisiemeActivity : AppCompatActivity() {
             startActivity(intent2)
 
             checkGroup1 = "Languages :"
-            checkGroup2 = "Hobbies : "
+            checkGroup2 = "Hobbies : "*/
+
+        textViewName = findViewById(R.id.textViewNom)
+        textViewEmail = findViewById(R.id.textViewAddress)
+
+        textViewName!!.setText(intent.getStringExtra("Name").toString())
+        textViewEmail!!.setText(intent.getStringExtra("Email").toString())
+
+
+        btnSkills = findViewById(R.id.btnSkills)
+
+        btnSkills!!.setOnClickListener {
+            changeFragment(SkillFragment(), "")
         }
+
+        btnHobbies = findViewById(R.id.btnHobbies)
+
+        btnHobbies!!.setOnClickListener {
+            changeFragment(HobbiesFragment(), "")
+        }
+
+        btnLanguages = findViewById(R.id.btnLanguage)
+
+        btnLanguages!!.setOnClickListener {
+            changeFragment(LanguageFragment(), "")
+        }
+
+        supportFragmentManager.beginTransaction().add(R.id.fragment_container, SkillFragment()).commit()
+
+        btnMyCarrer = findViewById(R.id.buttonCarrer)
+        btnMyCarrer.setOnClickListener {
+            val intent= Intent(this, MyCareer::class.java)
+            startActivity(intent)
+        }
+    }
+    private fun changeFragment(fragment: Fragment, name: String) {
+
+        if (name.isEmpty())
+            supportFragmentManager.beginTransaction().replace(R.id.fragment_container, fragment).commit()
+        else
+            supportFragmentManager.beginTransaction().replace(R.id.fragment_container, fragment).addToBackStack(name).commit()
+
     }
 }

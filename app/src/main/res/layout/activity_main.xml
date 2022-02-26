@@ -7,75 +7,134 @@
     tools:context=".MainActivity">
 
     <include
-        android:id="@+id/toolbar"
+        android:id="@+id/include"
         layout="@layout/toolbar_withoutinfo_layout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:id="@+id/imageViewUser"
+        android:layout_width="208dp"
+        android:layout_height="144dp"
+        android:layout_gravity="center|center_horizontal|center_vertical"
+        android:clickable="true"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.565"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toBottomOf="@+id/include"
+        app:srcCompat="@drawable/ic_baseline_account_circle_24" />
 
     <com.google.android.material.textfield.TextInputLayout
-
-        android:id="@+id/textInputLayout3"
+        android:id="@+id/filledTextFieldFullName"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
-        android:hint="@string/FullName"
-        app:helperTextTextColor="@color/red"
+        android:layout_height="63dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Fullname"
+        app:boxStrokeColor="#009688"
+        app:endIconTint="#009688"
+        app:errorEnabled="true"
+        app:hintTextColor="#009688"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3">
+        app:layout_constraintTop_toBottomOf="@+id/imageViewUser"
+        app:startIconContentDescription="FullName"
+        app:startIconDrawable="@drawable/ic_baseline_account_circle_24"
+        app:startIconTint="#009688">
+
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/EditTextFullName"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:inputType="textPersonName" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:srcCompat="@tools:sample/avatars" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+    <TextView
+        android:id="@+id/textViewfullNameError"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/Email"
-        android:layout_marginTop="18dp"
-        app:helperTextTextColor="@color/red"
+        android:text=""
+        android:textColor="#FF0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filledTextFieldFullName" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/filledTextFieldEmail"
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Email"
+        app:boxStrokeColor="#009688"
+        app:endIconTint="#009688"
+        app:errorEnabled="true"
+        app:hintTextColor="#009688"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3">
+        app:layout_constraintTop_toBottomOf="@+id/filledTextFieldFullName"
+        app:startIconContentDescription="Email"
+        app:startIconDrawable="@drawable/ic_baseline_mail_24"
+        app:startIconTint="#009688">
+
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/EditTextEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimaryDark"
             android:inputType="textEmailAddress" />
+
 
     </com.google.android.material.textfield.TextInputLayout>
 
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout2"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    <TextView
+        android:id="@+id/textViewEmailError"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
-        android:hint="@string/Age"
-        app:helperTextTextColor="@color/red"
+        android:text=""
+        android:textColor="#FF0000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+        app:layout_constraintTop_toBottomOf="@+id/filledTextFieldEmail" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/filledTextFieldAge"
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Age"
+        app:boxStrokeColor="#009688"
+        app:endIconTint="#009688"
+        app:errorEnabled="true"
+        app:hintTextColor="#009688"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filledTextFieldEmail"
+        app:startIconContentDescription="Age"
+        app:startIconDrawable="@drawable/ic_baseline_date_range_24"
+        app:startIconTint="#009688">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/EditTextAge"
@@ -86,52 +145,79 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
+        android:id="@+id/textViewAgeError"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Gender"
-        android:layout_marginTop="18dp"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="28dp"
-        android:textStyle="bold"
+        android:text=""
+        android:textColor="#FF0000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+        app:layout_constraintTop_toBottomOf="@+id/filledTextFieldAge" />
 
-    <RadioGroup
-        android:layout_width="208dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="18dp"
-        android:orientation="horizontal"
+
+    <FrameLayout
+        android:id="@+id/materialCardView1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/background_border"
+        app:layout_constraintBottom_toTopOf="@+id/buttonNext"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3">
+        app:layout_constraintTop_toBottomOf="@+id/textViewEmailError">
 
-        <RadioButton
-            android:id="@+id/radioButtonMale"
-            android:layout_width="107dp"
+        <TextView
+            android:id="@+id/textViewSkills"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Male" />
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="Gender"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
-        <RadioButton
-            android:id="@+id/radioButtonFemale"
-            android:layout_width="101dp"
+        <RadioGroup
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Female" />
-    </RadioGroup>
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonMale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:checked="true"
+                android:text="Male"
+                android:textColor="@color/colorPrimary"
+                android:textColorHighlight="@color/black"
+                android:textColorLink="@color/colorPrimaryLight" />
+
+            <RadioButton
+                android:id="@+id/radioButtonFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Female"
+                android:textColor="@color/colorPrimary" />
+        </RadioGroup>
+
+
+    </FrameLayout>
+
 
     <Button
         android:id="@+id/buttonNext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="19dp"
-        android:layout_marginRight="19dp"
-        android:layout_marginBottom="6dp"
-        android:backgroundTint="@color/colorPrimaryDark"
-        android:text="Next"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,10 +3,27 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/walid/StudioProjects/CurriculumVitaeV2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.21354166666666666" />
+        <entry key="..\:/Users/walid/StudioProjects/CurriculumVitaeV2/app/src/main/res/drawable/background_border.xml" value="0.2703125" />
+        <entry key="..\:/Users/walid/StudioProjects/CurriculumVitaeV2/app/src/main/res/drawable/gradiant_overlay.xml" value="0.2703125" />
+        <entry key="..\:/Users/walid/StudioProjects/CurriculumVitaeV2/app/src/main/res/drawable/gradiant_splash.xml" value="0.2703125" />
+        <entry key="..\:/Users/walid/StudioProjects/CurriculumVitaeV2/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.21354166666666666" />
+        <entry key="..\:/Users/walid/StudioProjects/CurriculumVitaeV2/app/src/main/res/drawable/ic_baseline_date_range_24.xml" value="0.21354166666666666" />
+        <entry key="..\:/Users/walid/StudioProjects/CurriculumVitaeV2/app/src/main/res/drawable/ic_baseline_mail_24.xml" value="0.21354166666666666" />
+        <entry key="..\:/Users/walid/StudioProjects/CurriculumVitaeV2/app/src/main/res/drawable/ic_info.xml" value="0.21354166666666666" />
+        <entry key="..\:/Users/walid/StudioProjects/CurriculumVitaeV2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.21354166666666666" />
         <entry key="..\:/Users/walid/StudioProjects/CurriculumVitaeV2/app/src/main/res/layout/activity_four.xml" value="0.264" />
         <entry key="..\:/Users/walid/StudioProjects/CurriculumVitaeV2/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/walid/StudioProjects/CurriculumVitaeV2/app/src/main/res/layout/activity_my_career.xml" value="0.19739583333333333" />
         <entry key="..\:/Users/walid/StudioProjects/CurriculumVitaeV2/app/src/main/res/layout/activity_splash_screen.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/walid/StudioProjects/CurriculumVitaeV2/app/src/main/res/layout/activity_troisieme.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/walid/StudioProjects/CurriculumVitaeV2/app/src/main/res/layout/fragment_education_blank.xml" value="0.19739583333333333" />
+        <entry key="..\:/Users/walid/StudioProjects/CurriculumVitaeV2/app/src/main/res/layout/fragment_experience_blank.xml" value="0.19739583333333333" />
+        <entry key="..\:/Users/walid/StudioProjects/CurriculumVitaeV2/app/src/main/res/layout/fragment_hobbies.xml" value="0.25" />
+        <entry key="..\:/Users/walid/StudioProjects/CurriculumVitaeV2/app/src/main/res/layout/fragment_language.xml" value="0.4" />
+        <entry key="..\:/Users/walid/StudioProjects/CurriculumVitaeV2/app/src/main/res/layout/fragment_skill.xml" value="0.264" />
+        <entry key="..\:/Users/walid/StudioProjects/CurriculumVitaeV2/app/src/main/res/layout/single_row_education.xml" value="0.264" />
+        <entry key="..\:/Users/walid/StudioProjects/CurriculumVitaeV2/app/src/main/res/layout/single_row_experience.xml" value="0.264" />
         <entry key="..\:/Users/walid/StudioProjects/CurriculumVitaeV2/app/src/main/res/layout/toolbar_layout.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/walid/StudioProjects/CurriculumVitaeV2/app/src/main/res/layout/toolbar_withoutinfo_layout.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/walid/StudioProjects/CurriculumVitaeV2/app/src/main/res/menu/menu.xml" value="0.25416666666666665" />

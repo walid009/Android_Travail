@@ -9,13 +9,14 @@ import android.widget.RadioButton
 import android.widget.Toast
 import androidx.core.widget.addTextChangedListener
 import com.example.curriculumvitaev2.databinding.ActivityMainBinding
-import com.google.android.material.textfield.TextInputEditText
-import com.google.android.material.textfield.TextInputLayout
+
 
 class MainActivity : AppCompatActivity() {
 
     private var radioButtonMale: RadioButton? = null
     private var radioButtonFemale: RadioButton? = null
+
+
     private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,9 +26,12 @@ class MainActivity : AppCompatActivity() {
         radioButtonMale = findViewById(R.id.radioButtonMale)
         radioButtonFemale = findViewById(R.id.radioButtonFemale)
 
+
+
         setupTextInputLayout()
         title = "Create your Resume "
     }
+
     private fun setupTextInputLayout() {
         binding.buttonNext.setOnClickListener {
             val fullname = binding.EditTextFullName.text.toString()

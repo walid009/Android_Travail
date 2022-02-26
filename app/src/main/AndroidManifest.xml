@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CurriculumVitaeV2">
         <activity
+            android:name=".MyCareer"
+            android:exported="true" />
+        <activity
             android:name=".toolbar_layout"
             android:exported="true"
             android:label="@string/title_activity_toolbar_layout"
