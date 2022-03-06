@@ -3,8 +3,9 @@ package com.example.curriculumvitaev2
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.curriculumvitaev2.data.Experience
 
-class ExperienceAdapter(val championsList: MutableList<Experience>): RecyclerView.Adapter<ExperienceViewHolder>() {
+class ExperienceAdapter(val championsList: MutableList<com.example.curriculumvitaev2.Experience>): RecyclerView.Adapter<ExperienceViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ExperienceViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.single_row_experience, parent, false)
         return  ExperienceViewHolder(view)

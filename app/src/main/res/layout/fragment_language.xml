@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_border"
     tools:context=".LanguageFragment"
     android:layout_margin="14dp"
     android:maxHeight="250dp"

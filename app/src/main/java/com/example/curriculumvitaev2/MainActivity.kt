@@ -38,8 +38,8 @@ class MainActivity : AppCompatActivity() {
             val email = binding.EditTextEmail.text.toString()
             val age = binding.EditTextAge.text.toString()
 
-            val intent= Intent(this, TroisiemeActivity::class.java)
-            if(radioButtonMale!!.isChecked){
+            val intent= Intent(this, SecondActivity::class.java)
+            /*if(radioButtonMale!!.isChecked){
                 intent.putExtra("Genre","Male")
             }
             if(radioButtonFemale!!.isChecked){
@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
             }
             intent.putExtra("Name","Name: $fullname")
             intent.putExtra("Email","Email : $email")
-            intent.putExtra("Age","Age : $age")
+            intent.putExtra("Age","Age : $age")*/
 
             startActivity(intent)
         }

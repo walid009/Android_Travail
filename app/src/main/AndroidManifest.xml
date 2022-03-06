@@ -10,13 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CurriculumVitaeV2">
         <activity
-            android:name=".MyCareer"
+            android:name=".AddExperienceActivity"
             android:exported="true" />
         <activity
-            android:name=".toolbar_layout"
-            android:exported="true"
-            android:label="@string/title_activity_toolbar_layout"
-            android:theme="@style/Theme.CurriculumVitaeV2.NoActionBar" />
+            android:name=".SecondActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MyCareer"
+            android:exported="true" />
         <activity
             android:name=".FourActivity"
             android:exported="true" />
@@ -29,7 +30,7 @@
         <activity
             android:name=".SplashScreen"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            android:theme="@style/Theme.CurriculumVitaeV2.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
